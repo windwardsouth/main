@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windward South - South Padre Island Rental</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --background-light: #f4f6f7;
+            --text-dark: #2c3e50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--background-light);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            position: relative;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background-size: cover;
+            background-position: center;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Causeway.JPG');
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 2rem 0;
+            background: white;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .property-details, .features, .cta-section, .contact {
+            padding: 3rem 0;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .feature-item {
+            background: var(--background-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .cta-section {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+
+        .book-now-btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary-color);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .book-now-btn:hover {
+            background: var(--text-dark);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .contact {
+            background: var(--text-dark);
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .details-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero {
+                height: 50vh;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Windward South</h1>
+            <p>Experience the ultimate South Padre Island getaway with our meticulously curated short-term rental</p>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <a href="https://www.islandrentalsspi.com/brand-new-luxe-oceanfront-heated-pool-orp5b6746fx" class="book-now-btn" target="_blank">Book Your Stay Now</a>
+    </div>
+
+    <div class="image-gallery container">
+        <div class="gallery-item">
+            <img src="kitchen.jpeg" alt="Kitchen">
+        </div>
+        <div class="gallery-item">
+            <img src="Kitchen 2.jpeg" alt="Kitchen">
+        </div>
+        <div class="gallery-item">
+            <img src="Kitchen 3.jpeg" alt="Kitchen">
+        </div>
+        <div class="gallery-item">
+            <img src="Living Room.jpeg" alt="Living Room">
+        </div>
+        <div class="gallery-item">
+            <img src="Living Room 2.jpeg" alt="Living Room">
+        </div>
+        <div class="gallery-item">
+            <img src="Dining Room.jpeg" alt="Dining Room">
+        </div>
+        <div class="gallery-item">
+            <img src="Primary Bedroom.jpeg" alt="Primary Bedroom">
+        </div>
+        <div class="gallery-item">
+            <img src="Primary Bedroom 2.jpeg" alt="Primary Bedroom">
+        </div>
+        <div class="gallery-item">
+            <img src="Primary Bath.jpeg" alt="Primary Bathroom">
+        </div>
+        <div class="gallery-item">
+            <img src="Primary Bathroom2.jpeg" alt="Primary Bathroom">
+        </div>
+        <div class="gallery-item">
+            <img src="Second Bedroom.jpeg" alt="2nd Bedroom">
+        </div>
+        <div class="gallery-item">
+            <img src="2nd Bedroom 2.jpeg" alt="2nd Bedroom">
+        </div>
+        <div class="gallery-item">
+            <img src="Second Bathroom.jpeg" alt="2nd Bathroomm">
+        </div>
+        <div class="gallery-item">
+            <img src="Bahia.jpg" alt="Pool">
+        </div>
+        <div class="gallery-item">
+            <img src="Bahia2.jpeg" alt="Bahia Mar">
+        </div>        
+        <div class="gallery-item">
+            <img src="view.jpeg" alt="Balcony">
+        </div>        
+        <div class="gallery-item">
+            <img src="balcony2.jpeg" alt="Balcony">
+        </div>
+    </div>
+
+    <div class="property-details container">
+        <div class="details-grid">
+            <div>
+                <h2>About Our Rental</h2>
+                <p>Situated at the famed Bahia Mar Resort.  Nestled in the heart of South Padre Island, our property offers an unparalleled blend of comfort, style, and convenience. Perfect for families, couples, and friends looking to create unforgettable memories.</p>
+            </div>
+            <div>
+                <h2>Location Highlights</h2>
+                <p>Beachfront property with great views, relaxing atmosphere, and many amenities. Your gateway to the best South Padre Island has to offer, with easy access and stunning surroundings.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="features container">
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Beach Access</h3>
+                <p>Direct path to sandy shores</p>
+            </div>
+            <div class="feature-item">
+                <h3>Great Amenities</h3>
+                <p>Heated Pool, Hot Tubs, Kid Pool, Tennis Ball & Paddle Court</p>
+            </div>
+            <div class="feature-item">
+                <h3>Modern Essentials</h3>
+                <p>WiFi, smart TV, fully equipped</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <a href="https://www.islandrentalsspi.com/brand-new-luxe-oceanfront-heated-pool-orp5b6746fx" class="book-now-btn" target="_blank">Book Your Stay Now</a>
+    </div>
+
+    <div class="contact">
+        <h2>Get in Touch</h2>
+        <p>Email: fullermatt@hotmail.com</p>
+        <p>Phone: (312) 315-7995</p>
+    </div>
+</body>
+</html>
