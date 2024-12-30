@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Static website hosted on Cloudflare Pages",
   "scripts": {
-    "build": "echo bash build.sh"
+
   },
   "dependencies": {},
   "devDependencies": {}
