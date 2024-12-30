@@ -1,8 +1,5 @@
-if [ "$CF_PAGES_BRANCH" == "production" ]; then
-  npm run production
-
-elif [ "$CF_PAGES_BRANCH" == "staging" ]; then
-  npm run staging
+if [ "$CF_PAGES_BRANCH" == "main" ]; then
+  npm run main
 
 else
   npm run dev
